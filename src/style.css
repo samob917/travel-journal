@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+nav {
+  background: #f55a5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav--logo {
+  width: 24px;
+  height: 24px;
+}
+
+nav > h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.4608px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  margin-left: 5px;
+
+  color: #ffffff;
+}
+.Card {
+  display: flex;
+  width: 470px;
+  height: 168px;
+  gap: 19px;
+  align-items: center;
+}
+.Card--placePicture {
+  width: 126px;
+  height: 168px;
+  border-radius: 5px;
+}
+
+.Card--maps {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Card--locationSymbol {
+  height: 10px;
+  width: 7px;
+}
+
+.Card--country {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  color: #2b283a;
+}
+
+.Card--mapsLink {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  /* identical to box height */
+
+  text-decoration-line: underline;
+
+  color: #918e9b;
+}
+
+.Card--placeName {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+
+  color: #2b283a;
+}
+.Card--dates {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+
+  color: #2b283a;
+}
+
+.Card--desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  /* or 15px */
+  margin-top: 0px;
+
+  color: #2b283a;
+}

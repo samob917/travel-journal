@@ -30,7 +30,7 @@ export default [
     title: "St. Andrews",
     location: "Scotland",
     googleMapsUrl:
-      "google.co.uk/maps/place/St+Andrews/@56.3365554,-2.8252859,14z/data=!3m1!4b1!4m5!3m4!1s0x488650981912f9fb:0x5526f99ec05ca9f0!8m2!3d56.3397753!4d-2.7967214",
+      "https://www.google.co.uk/maps/place/St+Andrews/@56.3365554,-2.8252859,14z/data=!3m1!4b1!4m5!3m4!1s0x488650981912f9fb:0x5526f99ec05ca9f0!8m2!3d56.3397753!4d-2.7967214",
     startDate: "5 Nov, 2022",
     endDate: "11 Nov, 2022",
     description:

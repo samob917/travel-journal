@@ -1,13 +1,11 @@
 import React from "react";
 
-export default function Card() {
+export default function Card(props) {
+  const country = props.location.toUpperCase();
   return (
-    <div>
+    <div className="CardWrapper">
       <div className="Card">
-        <img
-          className="Card--placePicture"
-          src={require("../images/japan.png")}
-        />
+        <img className="Card--placePicture" src={props.pic} />
         <div className="Card--content">
           <div className="Card--maps">
             <img
@@ -15,21 +13,21 @@ export default function Card() {
               src={require("../images/locationTag.png")}
             />
             {/* This is where the red location tag goes */}
-            <h3 className="Card--country">JAPAN </h3>
-            <p className="Card--mapsLink">View on Google Maps</p>
+            <h3 className="Card--country">{country}</h3>
+            <a href={props.gmap} className="Card--mapsLink">
+              View on Google Maps
+            </a>
           </div>
           <div className="Card--placeDetails">
-            <h1 className="Card--placeName">Mount Fuji</h1>
-            <h5 className="Card--dates">12 Jan, 2021 - 24 Jan, 2021</h5>
-            <p className="Card--desc">
-              Mount Fuji is the tallest mountain in Japan, standing at 3,776
-              meters (12,380 feet). Mount Fuji is the single most popular
-              tourist site in Japan, for both Japanese and foreign tourists.
-            </p>
+            <h1 className="Card--placeName">{props.title}</h1>
+            <h5 className="Card--dates">
+              {props.startDate} - {props.endDate}
+            </h5>
+            <p className="Card--desc">{props.desc}</p>
           </div>
         </div>
       </div>
-      <hr></hr>
+      <hr />
     </div>
   );
 }
